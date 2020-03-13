@@ -3,7 +3,7 @@
 $pwd = getcwd();
 
 $command = 'cd ' . $pwd . ' && git pull';echo $command;
-$output = shell_exec($command);
+$output = exec($command);
 echo $output;
 
 ?>
