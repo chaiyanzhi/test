@@ -2,8 +2,8 @@
 
 $pwd = getcwd();
 
-$command = 'cd ' . $pwd . ' && git pull';
+$command = 'cd ' . $pwd . ' && git pull';echo $command;
 $output = shell_exec($command);
-print $output;
+echo $output;
 
 ?>
