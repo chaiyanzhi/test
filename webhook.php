@@ -16,7 +16,7 @@ $c = shell_exec('php -v');
 var_dump($c);
 $cmd = "eval `ssh-agent -s` && ssh-add && cd $target && git pull 2>&1";
         $res = shell_exec($cmd);
-        dump($res);
+        var_dump($res);
 //     $cmd = 'php -v';
 //     exec($cmd, $arr);
 //     echo '<pre>';
