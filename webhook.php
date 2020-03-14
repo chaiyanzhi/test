@@ -22,7 +22,7 @@ echo "<br>";
 $cmd = "sudo -Hu www cd $target && git pull";
  
 		$x = shell_exec($cmd);
-		 dump($x);
+		 var_dump($x);
 //     $cmd = 'php -v';
 //     exec($cmd, $arr);
 //     echo '<pre>';
