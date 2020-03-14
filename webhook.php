@@ -18,6 +18,11 @@ $cmd = "eval `ssh-agent -s` && ssh-add && cd $target && git pull 2>&1";
 $cmd = "eval `ssh-agent -s` && ssh-add && cd $target && ls 2>&1";
        $res = shell_exec($cmd);
         var_dump($res);
+echo "<br>";
+$cmd = "sudo -Hu www cd $target && git pull";
+ 
+		$x = shell_exec($cmd);
+		 dump($x);
 //     $cmd = 'php -v';
 //     exec($cmd, $arr);
 //     echo '<pre>';
