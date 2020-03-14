@@ -12,7 +12,7 @@ echo "<br>";
 exec('git pull',$b);
 var_dump($b);
 echo "<br>";
-$c = shell_exec('git pull');
+$c = shell_exec('php -v');
 var_dump($c);
 // var_dump(get_current_user());
 //     $cmd = 'php -v';
