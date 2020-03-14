@@ -5,10 +5,10 @@ $pwd = getcwd();
 $command = 'cd ' . $pwd . ' && git pull';echo $command;
 $output = exec('cd /www/wwwroot/www.luckymessenger.xyz && git pull');
 echo $output;
-var_dump(get_current_user());
+print_r(get_current_user());
     $cmd = 'php -v';
     exec($cmd, $arr);
     echo '<pre>'
-    var_dump($arr);
+    print_r($arr);
 
 ?>
